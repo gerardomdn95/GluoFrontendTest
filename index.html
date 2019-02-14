@@ -14,17 +14,19 @@
 
     <div id="mobile">
         <nav>
-            <img src="./assets/img/svg/menu.svg" alt="">
-            <p><b>Mi OVI</b></p>
-            <img src="./assets/img/svg/search.svg" alt="">
+            <div class="container">
+                <img src="./assets/img/svg/menu.svg" alt="">
+                <p><b>Mi OVI</b></p>
+                <img src="./assets/img/svg/search.svg" alt="">
+            </div>
         </nav>
         <div class="mobile-container">
             <div id="user" class="card">
                 <div class="user-info">
-                    <img height="65px" src="./assets/img/jpg/avatar.jpg" alt="user">
+                    <img height="55px" src="./assets/img/jpg/avatar.jpg" alt="user">
                     <div class="info">
-                        <p class="name"><b>Gregoria Samsa</b></p>
-                        <p class="lighten-text">55 5555 5555</p>
+                        <p class="name" id="name"></p>
+                        <p class="sub" id="phone"></p>
                     </div>
                 </div>
                 <i class="material-icons">expand_more</i>
@@ -32,24 +34,24 @@
             <div id="plan" class="card">
                 <div class="first">
                     <div>
-                        <p><b>Plan OVI Max 500</b></p>
-                        <p class="lighten-text">Minutos y SMS ilimitados</p>
+                        <p id="subscription"></p>
+                        <p id="conditions" class="lighten-text"></p>
                     </div>
                     <i class="material-icons">more_horiz</i>
                 </div>
                 <hr>
                 <div class="second">
                     <p><b>Total a pagar</b></p>
-                    <h1>$499. <b style="font-size: large; margin-left: -5px;">00</b> </h1>
-                    <p class="lighten-text">Pagar antes del 3 de Febrero de 2019</p>
+                    <h1>$<a id="paymentAmount">499</a>. <b style="font-size: large; margin-left: -5px;">00</b> </h1>
+                    <p class="lighten-text">Pagar antes del <a id="paymentDeadline"></a></p>
                     <button>PAGAR AHORA</button>
                 </div>
             </div>
             <div class="card">
                 <div class="first">
                     <div>
-                        <p><b>Internet 5GB</b></p>
-                        <p class="lighten-text">Vigencia 22/09/2019</p>
+                        <p><b>Internet <a id="gigabytes"></a>GB</b></p>
+                        <p class="lighten-text">Vigencia <a id="validUntil"></a></p>
                     </div>
                     <i class="material-icons">more_horiz</i>
                 </div>
@@ -61,11 +63,12 @@
                 </div>
                 <div class="last">
                     <div>
-                        <p class="number">82%</p>
+                        <p class="number"><a id="used"></a>%</p>
                         <p class="lighten-text">CONSUMIDOS</p>
                     </div>
                     <div>
-                        <p class="number">3679 <b style="font-size: initial;margin-left: -5px; color:#8c54ff;">MB</b></p>
+                        <p class="number"><a id="avilable"></a> <b style="font-size: initial;margin-left: -5px; color:#8c54ff;">MB</b>
+                        </p>
                         <p class="lighten-text">DISPONIBLES</p>
                     </div>
                 </div>
@@ -78,7 +81,7 @@
 
     </div>
 
-    <script src="main.js"></script>
+    <script type="module" src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

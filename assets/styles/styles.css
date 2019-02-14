@@ -43,6 +43,10 @@ button {
     align-content: center;
 }
 
+#name, #subscription {
+    font-weight: 600;
+}
+
 nav {
     height: 56px;
     background-color: #ffffff;
@@ -52,6 +56,12 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
 }
 
 .mobile-container {
@@ -69,7 +79,7 @@ nav {
     box-shadow: 0 10px 20px 0 rgba(46, 91, 255, 0.07);
     background-color: #ffffff;
     width: 83%;
-    margin-top: 3vh;
+    margin-top: 15px;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -89,6 +99,11 @@ nav {
 
 .lighten-text {
     margin-top: -10px;
+    color: #8798ad;
+}
+
+.sub {
+    margin-top: -15px;
     color: #8798ad;
 }
 
